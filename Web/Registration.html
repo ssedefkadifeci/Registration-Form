@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+    <style type="text/css">
+    label { width: 5em; float: left; }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <p>Please fill in all fields amd click Register.</p>
+
+    <form method = "post" action="form.php">
+        <h2>User İnformation</h2>
+
+        <div><label>First Name:</label>
+            <input type="text" name="fname">
+        </div>
+        <div><label>Last name:</label>
+            <input type="text" name="lname">
+        </div>
+        <div><label>Email:</label>
+            <input type="text" name="email">
+        </div>
+        <div><label>Phone:</label>
+            <input type="text" name="phone" 
+            placeholder="(555) 555-5555">
+        </div>
+
+        <h2>Publications</h2>
+        <p>Which book would you like information about?</p>
+
+        <select name="book">
+            <option>Internet and WWW How to Program</option>
+            <option>C++ How to Program</option>
+            <option>Java How to Program</option>
+            <option>Visual Basic How to Program</option>
+        </select>
+
+
+        <h2>Operating System</h2>
+        <p>Which operatng system do you use?</p>
+
+        <p> <input type="radio" name="os" value="Windows" checked>Windows
+            <input type="radio" name="os" value="Mac OS X" checked>Mac OS X
+            <input type="radio" name="os" value="Linux" checked>Linux
+            <input type="radio" name="os" value="Other" checked>Other
+        </p>
+
+        <p><input type="submit" name="submit" value="Register"></p>
+
+    
+        </form>
+</body>
+</html>
